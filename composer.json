@@ -1,0 +1,24 @@
+{
+    "name": "codelips/dooracle",
+    "description": "connection oracle for framework thinkphp5+",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "codelips",
+            "email": "codethumb@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "Dooracle\\"  : "src/"
+        }
+    },
+    "require": {
+        "catfan/medoo": "^1.6",
+        "topthink/framework": "~5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2"
+    }
+}
