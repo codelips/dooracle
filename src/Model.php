@@ -23,7 +23,7 @@ class Model
 
     protected static function db()
     {
-        return \Dooracle::getIntance();
+        return Dooracle::getIntance();
     }
 
     public static function getTableName()
@@ -161,7 +161,7 @@ class Model
             array_merge(
                 $where,
                 [
-                    'LIMIT' => [\Dooracle\helper\pagination_start($obj['count'], $obj['size'], $obj['page']), $obj['size']],
+                    'LIMIT' => [helper\pagination_start($obj['count'], $obj['size'], $obj['page']), $obj['size']],
                     'ORDER' => $order ?: ['id' => 'DESC']
                 ]
             )
