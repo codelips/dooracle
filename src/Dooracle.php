@@ -8,7 +8,7 @@ use think\facade\Config;
 class Dooracle
 {
 
-    private static $intance=null;
+    private static $intance = null;
 
     private static function connection()
     {
@@ -26,12 +26,12 @@ class Dooracle
     )
 )
        ";
-        $pdo = new \PDO("oci:dbname=".$tns,$dbconfig['username'],$dbconfig['password']);
+        $pdo = new \PDO("oci:dbname=" . $tns, $dbconfig['username'], $dbconfig['password']);
 
         $medoo = new Medoo([
             'pdo' => $pdo,
-            'database_type'=>'oracle',
-            'charset'=>$dbconfig['charset']
+            'database_type' => 'oracle',
+            'charset' => $dbconfig['charset']
         ]);
 
         return $medoo;
@@ -42,16 +42,9 @@ class Dooracle
      */
     public static function getIntance()
     {
-        if(self::$intance === null)
-        {
+        if (self::$intance === null) {
             self::$intance = self::connection();
         }
         return self::$intance;
     }
-
-
-
-
-
 }
-

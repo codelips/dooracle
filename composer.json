@@ -15,6 +15,7 @@
         }
     },
     "require": {
+        "php":">=7.0",
         "catfan/medoo": "^1.6",
         "topthink/framework": "~5.1"
     },
