@@ -12,7 +12,10 @@
     "autoload": {
         "psr-4" : {
             "Dooracle\\"  : "src/"
-        }
+        },
+        "files" : [
+            "src/helper/helper.php"
+        ]
     },
     "require": {
         "php":">=7.0",

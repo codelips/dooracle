@@ -23,7 +23,7 @@ class Model
 
     protected static function db()
     {
-        return Dooracle::getIntance();
+        return \Dooracle::getIntance();
     }
 
     public static function getTableName()
