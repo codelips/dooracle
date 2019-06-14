@@ -1,6 +1,6 @@
 <?php
 
-namespace Doooracle;
+namespace Dooracle;
 
 /**
  * 基础模型器
